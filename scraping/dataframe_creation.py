@@ -229,3 +229,7 @@ def box_scores_to_df():
     print(df)
     with open("box_scores.dframe", "wb") as bsdf:
         pickle.dump(df, bsdf)
+
+
+def testing(browser):
+    browser.get("http:/www.reddit.com")
