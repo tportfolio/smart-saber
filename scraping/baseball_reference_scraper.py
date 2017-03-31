@@ -1,18 +1,33 @@
-__author__ = 'Timothy'
-
-import pickle
-import os
-import time
-import csv
-import pandas as pd
 import collections
+import csv
+import os
+import pandas as pd
+import pickle
+import time
 
 from selenium import webdriver
-from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 
 
-def batter_br_list_scraper(browser):
+__author__ = 'Timothy'
+
+
+"""batter_br_list_scraper(browser, min_pa=200):
+
+Obtains list of batters from Baseball Reference, filtering entries
+based on plate appearances over the 2016 season.
+
+Args:
+    browser: An instantiation of the Selenium web browser.
+    min_pa: The number of PAs to serve as the cutoff for eligibility.
+
+Pickles the player names with their respective links as tuples.
+
+"""
+
+
+def batter_br_list_scraper(browser, min_pa=200):
     browser.get("http://www.baseball-reference.com/leagues/MLB/2016-standard-batting.shtml")
     browser.execute_script("window.scrollTo(0, 1250)")
     browser.find_element_by_id("players_standard_batting_toggle_partial_table").click()
@@ -21,7 +36,7 @@ def batter_br_list_scraper(browser):
     batter_links = []
     for el in qual:
         pa = int(el.find_element_by_xpath("td[6]").text)
-        if pa > 200:  # cutoff for relevant number of PAs
+        if pa > min_pa:  # cutoff for relevant number of PAs
             link_column = el.find_element_by_class_name("left")
             link_location = link_column.find_element_by_tag_name("a")
             batter_name = link_location.text
@@ -37,20 +52,18 @@ def batter_br_list_scraper(browser):
     print(len(qual))
 
 
-def batter_fg_list_scraper(browser):
-    browser.get("http://www.fangraphs.com/leaders.aspx?pos=all&stats=bat&lg=all&qual=0&type=8&season=2016&month=0&season1=2016&ind=0&team=0&rost=0&age=0&filter=&players=0&sort=4,d&page=1_352")
-    entries = browser.find_elements_by_xpath("/html/body/form/div[3]/div[2]/span[2]/div/table/tbody/tr")
-    print(len(entries))
+"""batter_br_csv_scraper(browser):
 
-    batters = []
-    for entry in entries:
-        url = entry.find_element_by_tag_name("a")
-        batters.append((url.text, url.get_attribute("href")))
+Obtains CSVs of 2016 game logs for standard statistics of all players
+previously scraped in batter_br_list_scraper.
 
-        print(batters[-1])
+Args:
+    browser: An instantiation of the Selenium web browser.
 
-    with open("batter_links_fg.data", "wb") as bl:
-        pickle.dump(batters, bl)
+Saves the game logs of each individual player as CSV files with the
+naming convention "Firstname Lastname.csv".
+
+"""
 
 
 def batter_br_csv_scraper(browser):
@@ -83,61 +96,21 @@ def batter_br_csv_scraper(browser):
             sl.write(csv_table.text)
 
 
-def batter_fg_csv_scraper(browser):
-    bl = open("batter_links_fg.data", "rb")
-    batters = pickle.load(bl)
-    bl.close()
-    os.chdir("../scraping/batting/fangraphs")
+"""pitcher_br_list_scraper(browser, min_gs=12):
 
-    for batter in batters:
-        url = batter[1].replace("ss", "sd") + "&type=6&gds=&gde=&season=2016&sort=0,a"
-        print(url)
-        browser.get(url)
+Obtains list of pitchers from Baseball Reference, filtering entries
+based on number of games started over the 2016 season.
 
-        tables = browser.find_elements_by_tag_name("tbody")
-        table = tables[-1]
-        games = table.find_elements_by_tag_name("tr")[1:]
-        print(len(games))
+Args:
+    browser: An instantiation of the Selenium web browser.
+    min_gs: The number of GSs to serve as the cutoff for eligibility.
 
-        csv_info = []
+Pickles the player names with their respective links as tuples.
 
-        headers = ["Date", "Team", "Opp", "BO", "Pos", "FB%", "FBv", "SL%", "SLv", "CT%", "CTv", "CB%", "CBv",
-                   "CH%", "CHv", "SF%", "SFv", "KN%", "KNv", "XX%"]
-        print(",".join(headers))
+"""
 
-        csv_info.append(headers)
 
-        for game in games:
-            stat_line = []
-            cols = game.find_elements_by_tag_name("td")
-            date = cols[0]
-            rest = cols[1:]
-
-            day = date.find_element_by_tag_name("a").text
-            if day == "Date":
-                print("header line")
-                continue
-
-            stat_line.append(day)
-
-            for col in rest:
-                val = col.text
-                if val is " ":
-                    val = 0
-                elif "%" in val:
-                    val = round(float(val.split(' ')[0]) / 100, 3)
-                stat_line.append(str(val))
-
-            csv_info.append(stat_line)
-
-        for el in csv_info:
-            print(el)
-
-        with open(batter[0] + ".csv", "w") as fg:
-            cw = csv.writer(fg, quoting=csv.QUOTE_NONE, lineterminator='\n')
-            cw.writerows(csv_info)
-
-def pitcher_br_list_scraper(browser):
+def pitcher_br_list_scraper(browser, min_gs=12):
     browser.get("http://www.baseball-reference.com/leagues/MLB/2016-standard-pitching.shtml")
     browser.execute_script("window.scrollTo(0, 1250)")
     browser.find_element_by_id("players_standard_pitching_toggle_partial_table").click()
@@ -146,7 +119,7 @@ def pitcher_br_list_scraper(browser):
     pitcher_links = []
     for el in qual:
         gs = int(el.find_element_by_xpath("td[10]").text)
-        if gs >= 12:  # cutoff for relevant number of GSs
+        if gs >= min_gs:  # cutoff for relevant number of GSs
             link_column = el.find_element_by_class_name("left")
             link_location = link_column.find_element_by_tag_name("a")
             pitcher_name = link_location.text
@@ -160,6 +133,20 @@ def pitcher_br_list_scraper(browser):
     with open("pitcher_links_br.data", "wb") as bl:
         pickle.dump(pitcher_links, bl)
     print(len(qual))
+
+
+"""pitcher_br_csv_scraper(browser):
+
+Obtains CSVs of 2016 game logs for standard statistics of all players
+previously scraped in pitcher_br_list_scraper.
+
+Args:
+    browser: An instantiation of the Selenium web browser.
+
+Saves the game logs of each individual player as CSV files with the
+naming convention "Firstname Lastname.csv".
+
+"""
 
 
 def pitcher_br_csv_scraper(browser):
@@ -179,8 +166,8 @@ def pitcher_br_csv_scraper(browser):
 
         dropdowns = browser.find_element_by_class_name("section_heading_text")
         share_and_more = dropdowns.find_element_by_class_name("hasmore")
-        #scroll_buffer = browser.find_element_by_tag_name("h2")
-        #browser.execute_script("return arguments[0].scrollIntoView();", scroll_buffer)
+        # scroll_buffer = browser.find_element_by_tag_name("h2")
+        # browser.execute_script("return arguments[0].scrollIntoView();", scroll_buffer)
         ActionChains(browser).move_to_element(share_and_more).perform()
         time.sleep(2)
 
@@ -192,7 +179,22 @@ def pitcher_br_csv_scraper(browser):
         with open(pitcher[0] + ".csv", "w") as sl:
             sl.write(csv_table.text)
 
-def throw_type_scraper(browser):
+
+"""throw_type_scraper(browser):
+
+Obtains dominant arm of all pitchers previously scraped in pitcher_br_list_scraper.
+
+Args:
+    browser: An instantiation of the Selenium web browser.
+    min_gs: The number of GSs to serve as the cutoff for eligibility.
+
+Pickles the information in OrderedDict form, which is later used to create DataFrames
+with the Pandas module.
+
+"""
+
+
+def throw_type_scraper(browser, min_gs=12):
     os.chdir("../scraping/pitching/pitcher_profiles")
     all_pitchers = collections.OrderedDict()
 
@@ -204,7 +206,7 @@ def throw_type_scraper(browser):
     pitcher_urls = []
     for pitcher in pitcher_list:
         gs = int(pitcher.find_element_by_xpath("td[10]").text)
-        if gs >= 12:  # cutoff for relevant number of GSs
+        if gs >= min_gs:  # cutoff for relevant number of GSs
             link_column = pitcher.find_element_by_class_name("left")
             link_location = link_column.find_element_by_tag_name("a")
             pitcher_name = link_location.text
@@ -231,6 +233,20 @@ def throw_type_scraper(browser):
 
     with open("pitcher_profiles.data", "wb") as pl:
         pickle.dump(all_pitchers, pl)
+
+
+"""pitcher_br_split_scraper(browser):
+
+Obtains season splits of all pitchers previously scraped in pitcher_br_list_scraper.
+
+Args:
+    browser: An instantiation of the Selenium web browser.
+
+Pickles the information to previously pickled OrderedDicts, which are later used to create DataFrames
+with the Pandas module.
+
+"""
+
 
 def pitcher_br_split_scraper(browser):
 
@@ -307,7 +323,22 @@ def pitcher_br_split_scraper(browser):
     with open("pitcher_profiles_updated.data", "wb") as ppu:
         pickle.dump(dicts, ppu)
 
-def batter_type_scraper(browser):
+
+"""batter_type_scraper(browser, min_pa=50):
+
+Obtains batting type of all players with the given PA cutoff.
+
+Args:
+    browser: An instantiation of the Selenium web browser.
+    min_pa: The number of PAs to serve as the cutoff for eligibility.
+
+Pickles the information in OrderedDict form, which is later used to create DataFrames
+with the Pandas module.
+
+"""
+
+
+def batter_type_scraper(browser, min_pa=50):
     os.chdir("../scraping/batting/batter_profiles")
     all_batters = collections.OrderedDict()
 
@@ -319,7 +350,7 @@ def batter_type_scraper(browser):
     batter_urls = []
     for batter in batter_list:
         pa = int(batter.find_element_by_xpath("td[6]").text)
-        if pa >= 50:  # filters out relievers/unused players
+        if pa >= min_pa:  # filters out relievers/unused players
             link_column = batter.find_element_by_class_name("left")
             link_location = link_column.find_element_by_tag_name("a")
             batter_name = link_location.text
@@ -347,48 +378,17 @@ def batter_type_scraper(browser):
     with open("batter_profiles.data", "wb") as bl:
         pickle.dump(all_batters, bl)
 
-def fangraphs_batters_info(csv_name):
-    os.chdir("../scraping/batting/batter_profiles")
-    bp = open("batter_profiles_updated.data", "rb")
-    dicts = pickle.load(bp)
-    bp.close()
 
-    df = pd.read_csv(csv_name)
-    suffix = csv_name.split('.')[0].rsplit(' ')[-1]
-    print(suffix)
-    df.columns = ['Season'] + list(df.columns[1:])
-    print(df.columns)
-    print(df)
-    print(len(df.iloc[:]))
+"""box_score_link_scraper(browser):
 
-    headers = ['AVG', 'BB/K', 'OPS', 'GB/FB', 'LD%', 'Soft%', 'Med%', 'Hard%']
-    for i in range(len(df.iloc[:])):
-        batter = df.ix[i, "Name"]
-        avg = round(df.ix[i, "AVG"], 3)
-        bbk = round(df.ix[i, "BB/K"], 3)
-        ops = round(df.ix[i, "OPS"], 3)
-        gbfb = round(df.ix[i, "GB/FB"], 3)
-        ld = df.ix[i, "LD%"]
-        soft = df.ix[i, "Soft%"]
-        med = df.ix[i, "Med%"]
-        hard = df.ix[i, "Hard%"]
+Obtains links for all box scores from the 2016 season.
 
-        vals = [batter, avg, bbk, ops, gbfb, ld, soft, med, hard]
-        print(vals)
-        curr_dict = dicts[batter]
+Args:
+    browser: An instantiation of the Selenium web browser.
 
-        for i in range(len(vals[1:])):
-            try:
-                if "%" in vals[i+1]:
-                    vals[i+1] = round(float(vals[i+1].split(' ')[0]) / 100, 3)
-            except:
-                pass
+Pickles the information as tuples of the game ID (unique) and the URL.
+"""
 
-            curr_dict[headers[i] + " - " + suffix] = vals[i+1]
-        print(curr_dict["Soft% - " + suffix])
-
-    with open("batter_profiles_updated.data", "wb") as bl:
-        pickle.dump(dicts, bl)
 
 def box_score_link_scraper(browser):
     browser.get("http://www.baseball-reference.com/leagues/MLB/2016-schedule.shtml")
@@ -397,6 +397,18 @@ def box_score_link_scraper(browser):
     boxscores = [el.get_attribute("href") for el in boxscore_list]
     with open("boxscores.data", "wb") as bs:
         pickle.dump(boxscores, bs)
+
+
+"""box_score_collector(browser):
+
+Obtains box score information from all games from the 2016 season.
+
+Args:
+    browser: An instantiation of the Selenium web browser.
+
+Pickles the information as OrderedDicts, with the primary keys being the game IDs.
+"""
+
 
 def box_score_collector(browser):
     box_score_dicts = collections.OrderedDict()
@@ -453,116 +465,23 @@ def box_score_collector(browser):
         with open("box_scores_dicts.data", "wb") as bsd:
             pickle.dump(box_score_dicts, bsd)
 
-def batter_df_initialization():
-    os.chdir("../scraping")
-    bl = open("batter_links_br.data", "rb")
-    links = pickle.load(bl)
-    bl.close()
-
-    print(len(links))
-    for link in links:
-        print(link[0])
-        with open("batting/fangraphs/" + link[0] + ".csv", "rb") as bp:
-            df = pd.read_csv(bp)
-            info = df[['Opp', 'BO']]
-            info = info.assign(Home=0, Away=0)
-            for i in range(len(info.index)):
-                if "@" in info.ix[i, "Opp"]:
-                    info.ix[i, "Away"] = 1
-                else:
-                    info.ix[i, "Home"] = 1
-            del info["Opp"]
-            print(info)
-            with open("batting/batter_profiles/" + link[0] + ".dframe", "wb") as bdf:
-                pickle.dump(info, bdf)
-
-def pitching_profiles_to_df():
-    os.chdir("../scraping/pitching/pitcher_profiles")
-    pp = open("pitcher_profiles_updated.data", "rb")
-    pitcher_profiles = pickle.load(pp)
-    pp.close()
-
-    df = pd.DataFrame.from_dict(pitcher_profiles).transpose()
-    print(df)
-
-    with open("pitchers.dframe", "wb") as pdf:
-        pickle.dump(df, pdf)
-
-def batting_profiles_to_df():
-    os.chdir("../scraping/batting/batter_profiles")
-    pp = open("batter_profiles_updated.data", "rb")
-    batter_profiles = pickle.load(pp)
-    pp.close()
-
-    df = pd.DataFrame.from_dict(batter_profiles).transpose()
-    print(df)
-
-    pp = open("batter_profiles.data", "rb")
-    batter_profiles = pickle.load(pp)
-    pp.close()
-    df2 = pd.DataFrame.from_dict(batter_profiles).transpose()
-    print(df2)
-
-    final_df = pd.concat([df, df2], axis=1, join_axes=[df.index])
-    print(final_df)
-
-    with open("batters.dframe", "wb") as pdf:
-        pickle.dump(df, pdf)
-
-def box_scores_to_df():
-    bs = open("box_scores_dicts.data", "rb")
-    batter_profiles = pickle.load(bs)
-    bs.close()
-    df = pd.DataFrame.from_dict(batter_profiles).transpose()
-    print(df)
-    with open("box_scores.dframe", "wb") as bsdf:
-        pickle.dump(df, bsdf)
-
-
 
 def main():
-    # binary = FirefoxBinary(r'C:\Program Files\Mozilla Firefox 46\firefox.exe')
-    # fp = webdriver.FirefoxProfile(r'C:\Users\Timothy\AppData\Roaming\Mozilla\Firefox\Profiles\d9ra2s92.selenium')
-    # browser = webdriver.Firefox(firefox_binary=binary, firefox_profile=fp)
 
-    # os.chdir("../scraping/pitching/pitcher_profiles")
     # pp = open("pitchers.dframe", "rb")
     # pitcher_profiles = pickle.load(pp)
     # pp.close()
     #
     # print(pitcher_profiles.head())
     # print(pitcher_profiles.ix["Tim Adleman"])
-
-
-
     #
-    os.chdir("batting/batter_profiles")
+    # with open("./batting/batter_profiles/Christian Bethancourt.dframe", "rb") as dff:
+    #     df = pickle.load(dff)
+    #     print(df)
 
-    for link in links:
-        print(link[0])
-        browser.get(link[1])
-
-        game_list = browser.find_element_by_id("batting_gamelogs")
-        games = game_list.find_elements_by_css_selector("[id^=batting_gamelogs]")
-        print(len(games))
-
-        with open(link[0] + ".dframe", "rb") as dff:
-            df = pickle.load(dff)
-            df = df.assign(LHP=0, RHP=0)
-            print(df)
-
-            for i in range(len(games)):
-                game_id = games[i].find_element_by_xpath("td[3]").find_element_by_tag_name("a").get_attribute("href")
-                game_id = game_id.split('/')[-1].strip(".shtml")
-                print(game_id)
-
-                box_score = box_scores[game_id]
-                if df.ix[i, "Away"] == 1:
-
-
-
-                points = games[i].find_element_by_xpath("td[35]").text
-                print(points)
+    binary = FirefoxBinary(r'C:\Program Files\Mozilla Firefox 46\firefox.exe')
+    fp = webdriver.FirefoxProfile(r'C:\Users\Timothy\AppData\Roaming\Mozilla\Firefox\Profiles\d9ra2s92.selenium')
+    browser = webdriver.Firefox(firefox_binary=binary, firefox_profile=fp)
 
     # os.chdir("../scraping/batting/batter_profiles")
     # bl = open("Jose Abreu.dframe", "rb")
@@ -579,7 +498,6 @@ def main():
     #
     #     print(away["Batters"])
     #     print(home["Pitcher"])
-
 
     # pl = open("pitcher_profiles.data", "rb")
     # pitchers = pickle.load(pl)
@@ -603,8 +521,6 @@ def main():
     # for key in noah.keys():
     #     print(key + " - " + str(noah[key]))
 
-
-    #http://stackoverflow.com/questions/41644381/python-set-firefox-preferences-for-selenium-download-location/41683377#41683377
 
 if __name__ == "__main__":
     main()
