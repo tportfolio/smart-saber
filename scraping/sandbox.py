@@ -19,9 +19,7 @@ __author__ = 'Timothy'
 
 def main():
 
-    # pp = open("pitchers.dframe", "rb")
-    # pitcher_profiles = pickle.load(pp)
-    # pp.close()
+
     #
     # print(pitcher_profiles.head())
     # print(pitcher_profiles.ix["Tim Adleman"])
@@ -29,12 +27,23 @@ def main():
     # with open("./batting/batter_profiles/Christian Bethancourt.dframe", "rb") as dff:
     #     df = pickle.load(dff)
     #     print(df)
-
+    #
     binary = FirefoxBinary(r'C:\Program Files\Mozilla Firefox 46\firefox.exe')
     fp = webdriver.FirefoxProfile(r'C:\Users\Timothy\AppData\Roaming\Mozilla\Firefox\Profiles\d9ra2s92.selenium')
     browser = webdriver.Firefox(firefox_binary=binary, firefox_profile=fp)
+    dfc.finalize_pitcher_game_log_dfs(browser)
+    # dfc.testing(browser)
+    #
+    # pp = open("batters.dframe", "rb")
+    # batters = pickle.load(pp)
+    # pp.close()
+    # batters = batters.loc[["Jose Altuve", "Nolan Arenado"], ["AVG - Away"]]
+    # print(batters)
+    # print(batters.sum())
+    # batters = batters.sum()
+    # print(batters["AVG - Away"])
 
-    dfc.testing(browser)
+
 
     # os.chdir("../scraping/batting/batter_profiles")
     # bl = open("Jose Abreu.dframe", "rb")
