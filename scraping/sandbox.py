@@ -4,6 +4,7 @@ import os
 import mlbgame
 import pandas as pd
 import pickle
+import random
 import time
 
 from selenium import webdriver
@@ -21,31 +22,47 @@ __author__ = 'Timothy'
 
 def main():
 
+    dgs.biological_lineup_selection()
+
+
+
     # day = mlbgame.day(2017, 4, 2)
     # for game in day:
     #     print(game)
     #     stats = mlbgame.player_stats(game.game_id)
     #     print(stats['home_batting'])
 
-    pdf = open("pitchers.dframe", "rb")
-    df = pickle.load(pdf)
-    pdf.close()
+    # pdf = open("pitchers.dframe", "rb")
+    # df = pickle.load(pdf)
+    # pdf.close()
+    # print(df)
+    #
+    # bdf = open("batters.dframe", "rb")
+    # df2 = pickle.load(bdf)
+    # bdf.close()
+    # df2 = df2.dropna()
+    # print(df2)
+    # #
+    # pitchers, batters = dgs.get_lineups()
+    # print("-----\nPitchers for today:")
+    # for p in pitchers:
+    #     print(p + " - " + str(p in list(df.index.values)))
+    # print("-----\nBatters for today:")
+    # for b in batters:
+    #     print(b + " - " + str(b in list(df2.index.values)))
+    #
+    # print(len(pitchers))
+    # print(len(batters))
 
-    bdf = open("batters.dframe", "rb")
-    df2 = pickle.load(bdf)
-    bdf.close()
-    df2 = df2.dropna()
+    # batter_dfs, pitcher_df = dgs.get_rg_predictions()
+    # lineup = dgs.random_team_generator(batter_dfs, pitcher_df)
+    # print(lineup)
+    # print(sum(x[1] for x in lineup))
+    # print(sum(x[2] for x in lineup))
 
-    pitchers, batters = dgs.get_lineups()
-    print("-----\nPitchers for today:")
-    for p in pitchers:
-        print(p + " - " + str(p in list(df.index.values)))
-    print("-----\nBatters for today:")
-    for b in batters:
-        print(b + " - " + str(b in list(df2.index.values)))
-
-    print(len(pitchers))
-    print(len(batters))
+    # pp = open("batters.dframe", "rb")
+    # batters = pickle.load(pp)
+    # pp.close()
 
     # df = pd.read_csv("DraftKings Salaries.csv")
     # df = df[["Position", "Name", "Salary", "AvgPointsPerGame"]]

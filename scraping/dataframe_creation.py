@@ -162,7 +162,7 @@ def finalize_batter_game_log_dfs(browser):
 
 """pitcher_gamelog_df_initialization():
 
-Converts OrderedDicts to DataFrame objects for individual batter game logs.
+Converts OrderedDicts to DataFrame objects for individual pitcher game logs.
 
 Pickles the DataFrame for later augmentation.
 
@@ -206,9 +206,12 @@ def pitcher_gamelog_df_initialization():
                 pickle.dump(info, pdf)
 
 
-"""pitcher_gamelog_df_initialization():
+"""finalize_pitcher_game_log_dfs(browser)
 
-Converts OrderedDicts to DataFrame objects for individual batter game logs.
+Converts OrderedDicts to DataFrame objects for individual pitcher game logs.
+
+Args:
+    browser: An instantiation of the Selenium web browser.
 
 Pickles the DataFrame for later augmentation.
 
@@ -341,6 +344,7 @@ def finalize_pitcher_game_log_dfs(browser):
         for el in inconsistent_pitcher_logs:
             inc.write(el + "\n")
 
+
 """pitching_profiles_to_df():
 
 Converts OrderedDicts to DataFrame objects for pitcher season split profiles.
@@ -393,7 +397,7 @@ def batting_profiles_to_df():
         pickle.dump(df, pdf)
 
 
-"""bbox_scores_to_df():
+"""box_scores_to_df():
 
 Converts OrderedDicts to DataFrame objects for box scores of all games.
 
@@ -410,7 +414,3 @@ def box_scores_to_df():
     print(df)
     with open("box_scores.dframe", "wb") as bsdf:
         pickle.dump(df, bsdf)
-
-
-def testing(browser):
-    browser.get("http:/www.reddit.com")
