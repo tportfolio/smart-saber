@@ -24,8 +24,6 @@ __author__ = 'Timothy'
 
 
 def main():
-    # mdl.create_clfs("pitcher")
-
     # dgs.biological_lineup_selection()
 
     # pdf = open("finalized_data_structures/pitcher_avg_splits_2016.dframe", "rb")
@@ -49,10 +47,13 @@ def main():
         # print(b + " - " + str(b in list(df2.index.values)))
         print(b)
 
+    # batters, pitchers = dgs.get_predictions(rfr=True)
+    # print(batters)
+    # print(pitchers)
+
     # print(len(pitchers))
     # print(len(batters))
 
-    # batter_dfs, pitcher_df = dgs.get_rg_predictions()
     # lineup = dgs.random_team_generator(batter_dfs, pitcher_df)
     # print(lineup)
     # print(sum(x[1] for x in lineup))

@@ -6,11 +6,6 @@ import pandas as pd
 import pickle
 import time
 
-from selenium import webdriver
-from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
-
-
 __author__ = 'Timothy'
 
 

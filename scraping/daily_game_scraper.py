@@ -1,5 +1,4 @@
 import collections
-import csv
 import datetime
 import os
 import pandas as pd
@@ -9,7 +8,6 @@ import time
 
 from io import StringIO
 from selenium import webdriver
-from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 
 __author__ = 'Timothy'
@@ -20,7 +18,7 @@ __author__ = 'Timothy'
 Starts up a browser (either Firefox or PhantomJS browser, depending on input argument).
 
 Args:
-    headless: 1 indicates PhantomJS browser, 0 indicates visible Firefox browser.
+    headless: True indicates PhantomJS browser, False indicates visible Firefox browser.
 
 Returns instantiation of the desired browser.
 
@@ -44,21 +42,16 @@ Creates a tuple of the player, given a DataFrame input.
 
 Args:
     player: A DataFrame input with properties of the player relative to the game day.
-    point_source: A selection of which source to use projections. Default is RotoGrinders, but
-        randomized forest regression models are available and are being evaluated for this project.
 
 Returns tuple of the player's name, DraftKings salary, and projected points.
 
 """
 
 
-def tuple_maker(player, point_source="RotoGrinders"):
+def tuple_maker(player):
     name = player.name
     salary = player.Salary
-    if point_source == "RotoGrinders":
-        points = player.RGPoints
-    else:
-        points = player.RFRPoints
+    points = player.Points
     return (name, salary, points)
 
 
@@ -165,8 +158,9 @@ Returns a list of tuples with the optimal players within..
 """
 
 
-def biological_lineup_selection():
-    batter_dfs, pitcher_df = get_rg_predictions()
+def biological_lineup_selection(rfr=False):
+    batter_df, pitcher_df = get_predictions(rfr)
+    batter_dfs = split_batter_df(batter_df)
 
     # initialization
     lineups = multiple_team_generator(batter_dfs, pitcher_df, 10)
@@ -263,7 +257,7 @@ def split_batter_df(df):
     return dfs_by_position
 
 
-"""get_rg_csv(browser, link):
+"""get_rg_df(browser, link):
 
 Obtains CSV from RotoGrinders with adjusted formatting for DataFrame usage.
 
@@ -276,24 +270,26 @@ Returns a properly formatted DataFrame of player information (DraftKings salarie
 """
 
 
-def get_rg_csv(browser, link):
+def get_rg_df(browser, link):
 
     browser.get(link)
     csv_values = browser.find_element_by_tag_name("pre").text
     formatted_values = StringIO(csv_values)
-    df = pd.read_csv(formatted_values, names=["Salary", "Team", "Position", "Opp", "Blank1", "Blank2", "RGPoints"])
+    df = pd.read_csv(formatted_values, names=["Salary", "Team", "Position", "Opp", "Blank1", "Blank2", "Points"])
     df = df.drop(["Blank1", "Blank2"], 1)
+    df = df[df.Salary != 0]
 
     return df
 
 
-"""get_rg_predictions(headless=1, verbose=1):
+"""get_predictions(rfr=False, headless=True, verbose=True):
 
-Scrapes RotoGrinders for predictions on current day's scores and creates DataFrames to hold information locally.
+Scrapes RotoGrinders for predictions on current day's performances and creates DataFrames to hold information locally.
 
 Args:
-    headless: 1 indicates PhantomJS browser, 0 indicates visible Firefox browser.
-    verbose: 1 indicates printing all messages as the function operates, 0 indicates silent operation.
+    rfr: True indicates adding random forest regression projections to DataFrames, False indicates skipping this tep.
+    headless: True indicates PhantomJS browser, False indicates visible Firefox browser.
+    verbose: True indicates printing all messages as the function operates, False indicates silent operation.
 
 Returns two properly formatted DataFrames of player information (DraftKings salaries, positional eligibility, etc.),
     one for batters and one for pitchers.
@@ -301,7 +297,7 @@ Returns two properly formatted DataFrames of player information (DraftKings sala
 """
 
 
-def get_rg_predictions(headless=1, verbose=1):
+def get_predictions(rfr=False, headless=True, verbose=True):
 
     if verbose:
         print("Loading browser...")
@@ -310,31 +306,47 @@ def get_rg_predictions(headless=1, verbose=1):
 
     if verbose:
         print("Loading RotoGrinders batter projections...")
-    batter_csv = get_rg_csv(browser, "https://rotogrinders.com/projected-stats/mlb-hitter.csv?site=draftkings")
-    batter_dfs = split_batter_df(batter_csv)
+    batter_df = get_rg_df(browser, "https://rotogrinders.com/projected-stats/mlb-hitter.csv?site=draftkings")
 
     if verbose:
         print("Loading RotoGrinders pitcher projections...")
-    pitcher_df = get_rg_csv(browser, "https://rotogrinders.com/projected-stats/mlb-pitcher.csv?site=draftkings")
+    pitcher_df = get_rg_df(browser, "https://rotogrinders.com/projected-stats/mlb-pitcher.csv?site=draftkings")
 
-    return batter_dfs, pitcher_df
+    if rfr:
+
+        # TODO: check if player has a model; if so, replace points with RFR projection; if not, then default to RG prediction
+        pitcher_tuples, batter_tuples = get_lineups(return_tuples=True)
+        for b in list(batter_df.index.values):
+            prediction_input = []
+
+        for p in list(pitcher_df.index.values):
+            prediction_input = []
 
 
-"""get_lineups(return_tuples=False, headless=1, verbose=1):
+
+    return batter_df, pitcher_df
+
+
+"""get_lineups(return_tuples=False, headless=True, verbose=True):
 
 Scrapes FantasyLabs for present day's MLB lineups.
 
 Args:
-    headless: 1 indicates PhantomJS browser, 0 indicates visible Firefox browser.
-    verbose: 1 indicates printing all messages as the function operates, 0 indicates silent operation.
-    return_tuples: 1 indicates returning tuples with detailed information about player matchup, 0 indicates name only.
+    headless: True indicates PhantomJS browser, False indicates visible Firefox browser.
+    verbose: True indicates printing all messages as the function operates, False indicates silent operation.
+    return_tuples: True indicates returning tuples with detailed information about player matchup, False indicates name only.
 
 Returns list of players who are active for the day. Pickles detailed tuples and plain name lists for the day.
 
 """
 
 
-def get_lineups(return_tuples=False, headless=1, verbose=1):
+def get_lineups(return_tuples=False, headless=True, verbose=True):
+
+    os.chdir("daily_lineup_info")
+    current_date = str(datetime.datetime.now()).split(' ')[0]
+    current_year, current_month, current_day = current_date.split('-')
+    formatted_date = str(current_month + current_day + current_year)
 
     all_batters = []
     all_pitchers = []
@@ -342,72 +354,84 @@ def get_lineups(return_tuples=False, headless=1, verbose=1):
     pitcher_tuples = []
     batter_tuples = []
 
-    if verbose:
-        print("Loading browser...")
+    if os.path.isdir(formatted_date):
+        os.chdir(formatted_date)
+        if verbose:
+            print("Lineups already downloaded, loading from pickled data.")
 
-    browser = browser_initialization(headless)
-    current_date = str(datetime.datetime.now()).split(' ')[0]
-    current_year, current_month, current_day = current_date.split('-')
-    formatted_date = str(current_month + current_day + current_year)
+        with open("batter_tuples_" + formatted_date + ".data", "rb") as dli:
+            batter_tuples = pickle.load(dli)
 
-    if verbose:
-        print("Connecting to FantasyLabs for line-ups on " + current_date + "...")
+        with open("pitcher_tuples_" + formatted_date + ".data", "rb") as dli:
+            pitcher_tuples = pickle.load(dli)
 
-    fl_link = "http://www.fantasylabs.com/mlb/lineups/?date=" + formatted_date
-    browser.get(fl_link)
+        with open("batter_names_" + formatted_date + ".data", "rb") as dli:
+            all_batters = pickle.load(dli)
 
-    if verbose:
-        print("Link of lineups can be found at " + fl_link + ".")
-    time.sleep(1)
+        with open("pitcher_names_" + formatted_date + ".data", "rb") as dli:
+            all_pitchers = pickle.load(dli)
+        os.chdir("..")
 
-    if verbose:
-        print("Scraping line-ups from FantasyLabs...")
-    game_list = browser.find_elements_by_class_name("panel-primary")
+    else:
+        if verbose:
+            print("Loading browser...")
 
-    for game in game_list:
-        projected_pitchers = game.find_elements_by_class_name("lineup-header")[1].find_elements_by_class_name("player-detail")
-        for p in projected_pitchers:
-            all_pitchers.append(p.text.split(" (")[0])
+        browser = browser_initialization(headless)
 
         if verbose:
-            print("--------\nPitchers for this game:")
-            print(all_pitchers[-2] + " (Away)")
-            print(all_pitchers[-1] + " (Home)")
+            print("Connecting to FantasyLabs for line-ups on " + current_date + "...")
 
-        projected_lineups = game.find_element_by_class_name("panel-body").find_elements_by_tag_name("ul")
-        batters_away = projected_lineups[0].find_elements_by_tag_name("li")
-
-        order = 1
-        for b in batters_away:
-            all_batters.append(b.find_element_by_tag_name("span").text)
-            batter_tuples.append((all_batters[-1], order, "Away", all_pitchers[-1]))
-            order += 1
-
-        pitcher_tuples.append((all_pitchers[-1], "Home", all_batters[-9:]))
+        fl_link = "http://www.fantasylabs.com/mlb/lineups/?date=" + formatted_date
+        browser.get(fl_link)
 
         if verbose:
-            print("\nAway Batting Lineup:")
-            for i in range(len(batters_away)):
-                print(str(i+1) + ". " + all_batters[(i-9)])
-
-        order = 1
-        batters_home = projected_lineups[1].find_elements_by_tag_name("li")
-        for b in batters_home:
-            all_batters.append(b.find_element_by_tag_name("span").text)
-            batter_tuples.append((all_batters[-1], order, "Home", all_pitchers[-2]))
-            order += 1
-
-        pitcher_tuples.append((all_pitchers[-2], "Away", all_batters[-9:]))
+            print("Link of lineups can be found at " + fl_link + ".")
+        time.sleep(1)
 
         if verbose:
-            print("\nHome Batting Lineup:")
-            for i in range(len(batters_home)):
-                print(str(i+1) + ". " + all_batters[i-9])
+            print("Scraping line-ups from FantasyLabs...")
+        game_list = browser.find_elements_by_class_name("panel-primary")
 
+        for game in game_list:
+            projected_pitchers = game.find_elements_by_class_name("lineup-header")[1].find_elements_by_class_name("player-detail")
+            for p in projected_pitchers:
+                all_pitchers.append(p.text.split(" (")[0])
 
-    os.chdir("daily_lineup_info")
+            if verbose:
+                print("--------\nPitchers for this game:")
+                print(all_pitchers[-2] + " (Away)")
+                print(all_pitchers[-1] + " (Home)")
 
-    if not os.path.isdir(formatted_date):
+            projected_lineups = game.find_element_by_class_name("panel-body").find_elements_by_tag_name("ul")
+            batters_away = projected_lineups[0].find_elements_by_tag_name("li")
+
+            order = 1
+            for b in batters_away:
+                all_batters.append(b.find_element_by_tag_name("span").text)
+                batter_tuples.append((all_batters[-1], order, "Away", all_pitchers[-1]))
+                order += 1
+
+            pitcher_tuples.append((all_pitchers[-1], "Home", all_batters[-9:]))
+
+            if verbose:
+                print("\nAway Batting Lineup:")
+                for i in range(len(batters_away)):
+                    print(str(i+1) + ". " + all_batters[(i-9)])
+
+            order = 1
+            batters_home = projected_lineups[1].find_elements_by_tag_name("li")
+            for b in batters_home:
+                all_batters.append(b.find_element_by_tag_name("span").text)
+                batter_tuples.append((all_batters[-1], order, "Home", all_pitchers[-2]))
+                order += 1
+
+            pitcher_tuples.append((all_pitchers[-2], "Away", all_batters[-9:]))
+
+            if verbose:
+                print("\nHome Batting Lineup:")
+                for i in range(len(batters_home)):
+                    print(str(i+1) + ". " + all_batters[i-9])
+
         os.mkdir(formatted_date)
         os.chdir(formatted_date)
 
@@ -431,7 +455,3 @@ def get_lineups(return_tuples=False, headless=1, verbose=1):
         return pitcher_tuples, batter_tuples
     else:
         return all_pitchers, all_batters
-
-
-
-
