@@ -1,5 +1,6 @@
 import collections
 import csv
+import datetime
 import glob
 import os
 import mlbgame
@@ -24,27 +25,27 @@ __author__ = 'Timothy'
 
 def main():
 
-    mdl.create_clfs("batter")
+
     # dgs.biological_lineup_selection()
 
-    # pdf = open("pitchers.dframe", "rb")
-    # df = pickle.load(pdf)
-    # pdf.close()
-    # print(df)
-    #
-    # bdf = open("batters.dframe", "rb")
-    # df2 = pickle.load(bdf)
-    # bdf.close()
-    # df2 = df2.dropna()
-    # print(df2)
-    #
-    # pitchers, batters = dgs.get_lineups()
-    # print("-----\nPitchers for today:")
-    # for p in pitchers:
-    #     print(p + " - " + str(p in list(df.index.values)))
-    # print("-----\nBatters for today:")
-    # for b in batters:
-    #     print(b + " - " + str(b in list(df2.index.values)))
+    pdf = open("finalized_data_structures/pitcher_avg_splits_2016.dframe", "rb")
+    df = pickle.load(pdf)
+    pdf.close()
+    print(df)
+
+    bdf = open("finalized_data_structures/batter_avg_splits_2016.dframe", "rb")
+    df2 = pickle.load(bdf)
+    bdf.close()
+    df2 = df2.dropna()
+    print(df2)
+
+    pitchers, batters = dgs.get_lineups()
+    print("-----\nPitchers for today:")
+    for p in pitchers:
+        print(p + " - " + str(p in list(df.index.values)))
+    print("-----\nBatters for today:")
+    for b in batters:
+        print(b + " - " + str(b in list(df2.index.values)))
 
     # print(len(pitchers))
     # print(len(batters))

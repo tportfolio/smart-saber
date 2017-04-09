@@ -1,5 +1,6 @@
 import collections
 import csv
+import datetime
 import os
 import pandas as pd
 import pickle
@@ -267,7 +268,7 @@ def split_batter_df(df):
 Obtains CSV from RotoGrinders with adjusted formatting for DataFrame usage.
 
 Args:
-    browser: An instantation of the Selenium-based browser.
+    browser: An instantiation of the Selenium-based browser.
     link: The link to the CSV.
 
 Returns a properly formatted DataFrame of player information (DraftKings salaries, positional eligibility, etc.).
@@ -341,10 +342,17 @@ def get_lineups(headless=1, verbose=1):
         print("Loading browser...")
 
     browser = browser_initialization(headless)
+    current_date = str(datetime.datetime.now()).split(' ')[0]
+    current_year, current_month, current_day = current_date.split('-')
 
     if verbose:
-        print("Connecting to FantasyLabs for current day's line-ups...")
-    browser.get("http://www.fantasylabs.com/mlb/lineups/?date=04042017")
+        print("Connecting to FantasyLabs for line-ups on " + current_date + "...")
+
+    fl_link = "http://www.fantasylabs.com/mlb/lineups/?date=" + current_month + current_day + current_year
+    browser.get(fl_link)
+
+    if verbose:
+        print("Link of lineups can be found at " + fl_link + ".")
     time.sleep(1)
 
     if verbose:
@@ -381,3 +389,4 @@ def get_lineups(headless=1, verbose=1):
                 print(str(i+1) + ". " + all_batters[i-9])
 
     return all_pitchers, all_batters
+
