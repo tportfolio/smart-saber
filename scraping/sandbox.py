@@ -1,5 +1,6 @@
 import collections
 import csv
+import glob
 import os
 import mlbgame
 import pandas as pd
@@ -21,16 +22,25 @@ __author__ = 'Timothy'
 
 
 def main():
+    os.chdir("pitching/pitcher_profiles")
+    with open("pitching_game_log_dicts.data", "rb") as temp:
+        df = pickle.load(temp)
+        for key in df.keys():
+            print(key)
+        print(df["Noah Syndergaard"])
+    # dframes = glob.glob("*.dframe")
+    # batter_dframes = collections.OrderedDict()
+    # for dframe in dframes:
+    #     name = dframe.split(" updated.dframe")[0]
+    #     print(name)
+    #     with open(dframe, "rb") as temp:
+    #         df = pickle.load(temp)
+    #         batter_dframes[name] = df
+    # with open("pitching_game_log_dicts.data", "wb") as bgl:
+    #     pickle.dump(batter_dframes, bgl)
 
-    dgs.biological_lineup_selection()
 
-
-
-    # day = mlbgame.day(2017, 4, 2)
-    # for game in day:
-    #     print(game)
-    #     stats = mlbgame.player_stats(game.game_id)
-    #     print(stats['home_batting'])
+    # dgs.biological_lineup_selection()
 
     # pdf = open("pitchers.dframe", "rb")
     # df = pickle.load(pdf)
@@ -42,7 +52,7 @@ def main():
     # bdf.close()
     # df2 = df2.dropna()
     # print(df2)
-    # #
+    #
     # pitchers, batters = dgs.get_lineups()
     # print("-----\nPitchers for today:")
     # for p in pitchers:
@@ -50,7 +60,7 @@ def main():
     # print("-----\nBatters for today:")
     # for b in batters:
     #     print(b + " - " + str(b in list(df2.index.values)))
-    #
+
     # print(len(pitchers))
     # print(len(batters))
 
@@ -77,8 +87,6 @@ def main():
     # print(salaries)
     # print(points)
 
-    # dfc.testing(browser)
-    #
     # pp = open("batters.dframe", "rb")
     # batters = pickle.load(pp)
     # pp.close()

@@ -15,6 +15,67 @@ from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 __author__ = 'Timothy'
 
 
+"""browser_initialization(headless):
+
+Starts up a browser (either Firefox or PhantomJS browser, depending on input argument).
+
+Args:
+    headless: 1 indicates PhantomJS browser, 0 indicates visible Firefox browser.
+
+Returns instantiation of the desired browser.
+
+"""
+
+
+def browser_initialization(headless):
+
+    if headless:
+        browser = webdriver.PhantomJS(executable_path=r"C:\Users\Timothy\AppData\Roaming\npm\node_modules\phantomjs-prebuilt\lib\phantom\bin\phantomjs.exe")
+    else:
+        binary = FirefoxBinary(r'C:\Program Files\Mozilla Firefox 46\firefox.exe')
+        fp = webdriver.FirefoxProfile(r'C:\Users\Timothy\AppData\Roaming\Mozilla\Firefox\Profiles\d9ra2s92.selenium')
+        browser = webdriver.Firefox(firefox_binary=binary, firefox_profile=fp)
+    return browser
+
+
+"""tuple_maker(player):
+
+Creates a tuple of the player, given a DataFrame input.
+
+Args:
+    player: A DataFrame input with properties of the player relative to the game day.
+    point_source: A selection of which source to use projections. Default is RotoGrinders, but
+        randomized forest regression models are available and are being evaluated for this project.
+
+Returns tuple of the player's name, DraftKings salary, and projected points.
+
+"""
+
+
+def tuple_maker(player, point_source="RotoGrinders"):
+    name = player.name
+    salary = player.Salary
+    if point_source == "RotoGrinders":
+        points = player.RGPoints
+    else:
+        points = player.RFRPoints
+    return (name, salary, points)
+
+
+"""mate_teams(batters, pitchers, lineups):
+
+Randomly creates a new team from two input teams.
+
+Args:
+    batters: A DataFrame of all valid players.
+    pitchers: A DataFrame of all valid pitchers.
+    lineups: The two "parent" lineups to be "mated".
+
+Returns new set of lineups after randomization.
+
+"""
+
+
 def mate_teams(batters, pitchers, lineups):
     outfielders = batters[-1]
     infielders = batters[:-1]
@@ -71,11 +132,18 @@ def mate_teams(batters, pitchers, lineups):
     return new_lineup_list
 
 
-def tuple_maker(player):
-    name = player.name
-    salary = player.Salary
-    points = player.RGPoints
-    return (name, salary, points)
+"""multiple_team_generator(batters, pitchers, num_teams):
+
+Generates desired number of random teams.
+
+Args:
+    batters: A DataFrame of all valid players.
+    pitchers: A DataFrame of all valid pitchers.
+    num_teams: The number of teams to be created.
+
+Returns desired cardinality of randomized lineups.
+
+"""
 
 
 def multiple_team_generator(batters, pitchers, num_teams):
@@ -86,6 +154,15 @@ def multiple_team_generator(batters, pitchers, num_teams):
         lineups.append(lineup)
 
     return lineups
+
+
+"""biological_lineup_selection():
+
+Generates the best lineup in a given randomized run with a genetic optimization algorithm.
+
+Returns a list of tuples with the optimal players within..
+
+"""
 
 
 def biological_lineup_selection():
@@ -114,6 +191,19 @@ def biological_lineup_selection():
             return new_teams[0]
         else:
             lineups_sorted = new_teams
+
+
+"""random_team_generator(batters, pitchers):
+
+Generates a random team within the constraints of a DraftKings lineup (positional and salary requirements).
+
+Args:
+    batters: A DataFrame of all valid players.
+    pitchers: A DataFrame of all valid pitchers.
+
+Returns a valid random lineup.
+
+"""
 
 
 def random_team_generator(batters, pitchers):
@@ -152,6 +242,18 @@ def random_team_generator(batters, pitchers):
             return player_tuples
 
 
+"""split_batter_df(df):
+
+Splits batter DataFrame into distinct DataFrames based on positional eligibility.
+
+Args:
+    df: The batter DataFrame.
+
+Returns a list of DataFrames, each of which only contains players at a particular position (e.g., catcher).
+
+"""
+
+
 def split_batter_df(df):
     positions = ["C", "1B", "2B", "3B", "SS", "OF"]
     dfs_by_position = []
@@ -161,15 +263,18 @@ def split_batter_df(df):
     return dfs_by_position
 
 
-def browser_initialization(headless):
+"""get_rg_csv(browser, link):
 
-    if headless:
-        browser = webdriver.PhantomJS(executable_path=r"C:\Users\Timothy\AppData\Roaming\npm\node_modules\phantomjs-prebuilt\lib\phantom\bin\phantomjs.exe")
-    else:
-        binary = FirefoxBinary(r'C:\Program Files\Mozilla Firefox 46\firefox.exe')
-        fp = webdriver.FirefoxProfile(r'C:\Users\Timothy\AppData\Roaming\Mozilla\Firefox\Profiles\d9ra2s92.selenium')
-        browser = webdriver.Firefox(firefox_binary=binary, firefox_profile=fp)
-    return browser
+Obtains CSV from RotoGrinders with adjusted formatting for DataFrame usage.
+
+Args:
+    browser: An instantation of the Selenium-based browser.
+    link: The link to the CSV.
+
+Returns a properly formatted DataFrame of player information (DraftKings salaries, positional eligibility, etc.).
+
+"""
+
 
 def get_rg_csv(browser, link):
 
@@ -180,6 +285,20 @@ def get_rg_csv(browser, link):
     df = df.drop(["Blank1", "Blank2"], 1)
 
     return df
+
+
+"""get_rg_predictions(headless=1, verbose=1):
+
+Scrapes RotoGrinders for predictions on current day's scores and creates DataFrames to hold information locally.
+
+Args:
+    headless: 1 indicates PhantomJS browser, 0 indicates visible Firefox browser.
+    verbose: 1 indicates printing all messages as the function operates, 0 indicates silent operation.
+
+Returns two properly formatted DataFrames of player information (DraftKings salaries, positional eligibility, etc.),
+    one for batters and one for pitchers.
+
+"""
 
 
 def get_rg_predictions(headless=1, verbose=1):
@@ -199,6 +318,19 @@ def get_rg_predictions(headless=1, verbose=1):
     pitcher_df = get_rg_csv(browser, "https://rotogrinders.com/projected-stats/mlb-pitcher.csv?site=draftkings")
 
     return batter_dfs, pitcher_df
+
+
+"""get_lineups(headless=1, verbose=1):
+
+Scrapes FantasyLabs for present day's MLB lineups.
+
+Args:
+    headless: 1 indicates PhantomJS browser, 0 indicates visible Firefox browser.
+    verbose: 1 indicates printing all messages as the function operates, 0 indicates silent operation.
+
+Returns list of players who are active for the day.
+
+"""
 
 
 def get_lineups(headless=1, verbose=1):
