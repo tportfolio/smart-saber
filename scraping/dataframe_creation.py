@@ -1,5 +1,6 @@
 import collections
 import csv
+import glob
 import os
 import pandas as pd
 import pickle
@@ -414,3 +415,30 @@ def box_scores_to_df():
     print(df)
     with open("box_scores.dframe", "wb") as bsdf:
         pickle.dump(df, bsdf)
+
+
+"""dfs_to_single_file(directory):
+
+Collects DataFrame files and makes an OrderedDict for more organization.
+
+Args:
+    directory: The location of the DataFrame files.
+
+Pickles the OrderedDict for later usage.
+
+"""
+
+
+def dfs_to_single_file(directory):
+    os.chdir(directory)
+    file_type = directory.split('/')[0]
+    dframes = glob.glob("*.dframe")
+    all_dframes = collections.OrderedDict()
+    for dframe in dframes:
+        name = dframe.split(" updated.dframe")[0]
+        print(name)
+        with open(dframe, "rb") as temp:
+            df = pickle.load(temp)
+            all_dframes[name] = df
+    with open(file_type + "_game_log_dicts.data", "wb") as bgl:
+        pickle.dump(all_dframes, bgl)

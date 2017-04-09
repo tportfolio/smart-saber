@@ -16,30 +16,15 @@ import fangraphs_scraper as fs
 import baseball_reference_scraper as brs
 import dataframe_creation as dfc
 import daily_game_scraper as dgs
+import modeling as mdl
 
 
 __author__ = 'Timothy'
 
 
 def main():
-    os.chdir("pitching/pitcher_profiles")
-    with open("pitching_game_log_dicts.data", "rb") as temp:
-        df = pickle.load(temp)
-        for key in df.keys():
-            print(key)
-        print(df["Noah Syndergaard"])
-    # dframes = glob.glob("*.dframe")
-    # batter_dframes = collections.OrderedDict()
-    # for dframe in dframes:
-    #     name = dframe.split(" updated.dframe")[0]
-    #     print(name)
-    #     with open(dframe, "rb") as temp:
-    #         df = pickle.load(temp)
-    #         batter_dframes[name] = df
-    # with open("pitching_game_log_dicts.data", "wb") as bgl:
-    #     pickle.dump(batter_dframes, bgl)
 
-
+    mdl.create_clfs("batter")
     # dgs.biological_lineup_selection()
 
     # pdf = open("pitchers.dframe", "rb")

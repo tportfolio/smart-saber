@@ -1,7 +1,6 @@
 import collections
 import csv
 import os
-import mlbgame
 import pandas as pd
 import pickle
 import random

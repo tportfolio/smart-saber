@@ -2,712 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd4ed541-562a-49f9-a614-b3318f5c0d7b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/A.J. Pierzynski updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Aaron Altherr updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Aaron Hicks updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Aaron Hill updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Adam Duvall updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Adam Eaton updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Adam Jones updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Adam Lind updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Adam Rosales updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Addison Russell updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Adeiny Hechavarria updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Adonis Garcia updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Adrian Beltre updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Adrian Gonzalez updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Albert Pujols updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Alcides Escobar updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Aledmys Diaz updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Alejandro De Aza updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Alex Avila updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Alex Bregman updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Alex Dickerson updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Alex Gordon updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Alex Rodriguez updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Alexei Ramirez updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Andrelton Simmons updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Andres Blanco updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Andrew McCutchen updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Angel Pagan updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Anthony Rendon updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Anthony Rizzo updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Asdrubal Cabrera updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Austin Jackson updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Avisail Garcia updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Ben Revere updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Ben Zobrist updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Billy Burns updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Billy Butler updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Billy Hamilton updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Bobby Wilson updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Brad Miller updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Brandon Belt updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Brandon Crawford updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Brandon Drury updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Brandon Guyer updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Brandon Moss updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Brandon Phillips updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Brett Eibner updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Brett Gardner updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Brett Lawrie updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Brett Wallace updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Brian Dozier updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Brian McCann updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Brock Holt updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Bryce Harper updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Buster Posey updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Byron Buxton updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Byung Ho Park updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/C.J. Cron updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Cameron Maybin updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Cameron Rupp updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Carlos Beltran updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Carlos Correa updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Carlos Gomez updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Carlos Gonzalez updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Carlos Perez updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Carlos Ruiz updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Carlos Santana updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Cesar Hernandez updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Charlie Blackmon updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Chase Headley updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Chase Utley updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Chase d'Arnaud updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Cheslor Cuthbert updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Chris Carter updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Chris Coghlan updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Chris Davis updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Chris Iannetta updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Chris Johnson updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Chris Owings updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Chris Young updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Christian Yelich updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Clint Robinson updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Coco Crisp updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Cody Asche updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Colby Rasmus updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Conor Gillaspie updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Corey Dickerson updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Corey Seager updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Cristhian Adames updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Curt Casali updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Curtis Granderson updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/DJ LeMahieu updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Dae-ho Lee updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Daniel Descalso updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Daniel Murphy updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Danny Espinosa updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Danny Santana updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Danny Valencia updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Darwin Barney updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/David Dahl updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/David Freese updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/David Ortiz updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/David Ross updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Dee Gordon updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Delino DeShields updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Denard Span updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Derek Dietrich updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Derek Norris updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Desmond Jennings updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Devon Travis updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Dexter Fowler updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Didi Gregorius updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Dioner Navarro updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Domingo Santana updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Dustin Pedroia updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Eddie Rosario updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Eduardo Escobar updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Eduardo Nunez updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Edwin Encarnacion updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Elvis Andrus updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Ender Inciarte updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Enrique Hernandez updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Eric Hosmer updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Erick Aybar updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Eugenio Suarez updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Evan Gattis updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Evan Longoria updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Ezequiel Carrera updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Francisco Cervelli updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Francisco Lindor updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Franklin Gutierrez updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Freddie Freeman updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Freddy Galvis updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Gary Sanchez updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/George Springer updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Gerardo Parra updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Giancarlo Stanton updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Gordon Beckham updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Greg Garcia updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Gregor Blanco updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Gregorio Petit updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Gregory Polanco updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Hanley Ramirez updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Hernan Perez updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Howie Kendrick updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Hunter Pence updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Hyun Soo Kim updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Ian Desmond updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Ian Kinsler updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Ichiro Suzuki updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Ivan De Jesus updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/J.B. Shuck updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/J.D. Martinez updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/J.J. Hardy updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/J.T. Realmuto updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Jace Peterson updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Jackie Bradley updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Jacoby Ellsbury updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Jake Lamb updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Jake Marisnick updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Jake Smolinski updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/James Loney updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/James McCann updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Jarrod Dyson updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Jarrod Saltalamacchia updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Jason Castro updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Jason Heyward updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Jason Kipnis updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Javier Baez updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Jay Bruce updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Jayson Werth updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Jean Segura updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Jed Lowrie updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Jedd Gyorko updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Jeff Francoeur updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Jefry Marte updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Jeremy Hazelbaker updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Jett Bandy updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Jhonny Peralta updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Joc Pederson updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Joe Mauer updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Joe Panik updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Joey Rickard updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Joey Votto updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/John Jaso updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Johnny Giavotella updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Jon Jay updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Jonathan Lucroy updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Jonathan Schoop updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Jonathan Villar updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Jordy Mercer updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Jorge Polanco updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Jorge Soler updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Jose Abreu updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Jose Altuve updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Jose Bautista updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Jose Iglesias updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Jose Peraza updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Jose Ramirez updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Jose Reyes updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Josh Donaldson updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Josh Harrison updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Josh Reddick updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Juan Uribe updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Jung Ho Kang updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Jurickson Profar updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Justin Bour updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Justin Morneau updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Justin Smoak updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Justin Turner updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Justin Upton updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Kelly Johnson updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Kendrys Morales updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Keon Broxton updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Ketel Marte updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Kevin Kiermaier updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Kevin Pillar updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Khris Davis updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Kirk Nieuwenhuis updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Kole Calhoun updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Kolten Wong updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Kris Bryant updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Kurt Suzuki updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Kyle Seager updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Leonys Martin updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Logan Forsythe updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Logan Morrison updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Lonnie Chisenhall updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Lorenzo Cain updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Luis Valbuena updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Maikel Franco updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Mallex Smith updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Manny Machado updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Marcell Ozuna updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Marcus Semien updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Mark Reynolds updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Mark Teixeira updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Mark Trumbo updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Martin Maldonado updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Martin Prado updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Marwin Gonzalez updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Matt Adams updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Matt Carpenter updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Matt Duffy updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Matt Holliday updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Matt Kemp updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Matt Wieters updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Matthew Joyce updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Max Kepler updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Melky Cabrera updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Melvin Upton updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Michael Bourn updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Michael Conforto updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Michael Saunders updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Michael Taylor updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Miguel Cabrera updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Miguel Montero updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Miguel Rojas updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Miguel Sano updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Mike Napoli updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Mike Trout updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Mitch Moreland updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Mookie Betts updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Neil Walker updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Nelson Cruz updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Nick Ahmed updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Nick Castellanos updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Nick Hundley updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Nick Markakis updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Nolan Arenado updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Nolan Reimold updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Nomar Mazara updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Nori Aoki updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Odubel Herrera updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Orlando Arcia updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Oswaldo Arcia updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Paul Goldschmidt updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Paulo Orlando updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Pedro Alvarez updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Peter Bourjos updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Philip Gosselin updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Prince Fielder updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Rafael Ortega updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Rajai Davis updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Ramon Flores updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Randal Grichuk updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Rene Rivera updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Rickie Weeks updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Robbie Grossman updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Robinson Cano updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Rougned Odor updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Russell Martin updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Ryan Braun updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Ryan Howard updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Ryan Raburn updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Ryan Rua updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Ryan Schimpf updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Ryan Zimmerman updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Ryon Healy updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Salvador Perez updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Sandy Leon updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Scooter Gennett updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Scott Schebler updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Sean Rodriguez updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Seth Smith updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Shawn O'Malley updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Shin-Soo Choo updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Starlin Castro updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Starling Marte updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Stephen Piscotty updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Stephen Vogt updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Steve Pearce updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Steven Souza updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Tim Anderson updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Tim Beckham updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Todd Frazier updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Tommy Joseph updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Tony Wolters updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Travis Jankowski updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Travis Shaw updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Travis d'Arnaud updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Trayce Thompson updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Trea Turner updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Trevor Plouffe updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Trevor Story updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Troy Tulowitzki updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Tucker Barnhart updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Tyler Flowers updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Tyler Goeddel updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Tyler Holt updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Tyler Naquin updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Tyler Saladino updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Tyler White updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Victor Martinez updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Welington Castillo updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Whit Merrifield updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Wil Myers updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Willson Contreras updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Wilmer Flores updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Wilson Ramos updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Xander Bogaerts updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Yadier Molina updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Yan Gomes updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Yangervis Solarte updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Yasiel Puig updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Yasmani Grandal updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Yasmany Tomas updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Yoenis Cespedes updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Yonder Alonso updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Yunel Escobar updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/Zack Cozart updated.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/A.J. Pierzynski.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Aaron Altherr.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Aaron Hicks.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Aaron Hill.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Adam Duvall.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Adam Eaton.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Adam Jones.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Adam Lind.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Adam Rosales.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Addison Russell.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Adeiny Hechavarria.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Adonis Garcia.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Adrian Beltre.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Adrian Gonzalez.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Albert Pujols.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Alcides Escobar.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Aledmys Diaz.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Alejandro De Aza.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Alex Avila.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Alex Bregman.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Alex Dickerson.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Alex Gordon.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Alex Rodriguez.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Alexei Ramirez.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Andrelton Simmons.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Andres Blanco.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Andrew McCutchen.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Angel Pagan.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Anthony Rendon.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Anthony Rizzo.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Asdrubal Cabrera.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Austin Jackson.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Avisail Garcia.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Ben Revere.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Ben Zobrist.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Billy Burns.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Billy Butler.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Billy Hamilton.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Bobby Wilson.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Brad Miller.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Brandon Belt.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Brandon Crawford.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Brandon Drury.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Brandon Guyer.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Brandon Moss.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Brandon Phillips.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Brett Eibner.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Brett Gardner.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Brett Lawrie.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Brett Wallace.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Brian Dozier.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Brian McCann.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Brock Holt.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Bryce Harper.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Buster Posey.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Byron Buxton.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Byung Ho Park.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/C.J. Cron.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Cameron Maybin.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Cameron Rupp.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Carlos Beltran.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Carlos Correa.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Carlos Gomez.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Carlos Gonzalez.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Carlos Perez.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Carlos Ruiz.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Carlos Santana.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Cesar Hernandez.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Charlie Blackmon.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Chase Headley.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Chase Utley.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Chase d'Arnaud.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Cheslor Cuthbert.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Chris Carter.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Chris Coghlan.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Chris Davis.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Chris Iannetta.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Chris Johnson.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Chris Owings.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Chris Young.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Christian Bethancourt.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Christian Yelich.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Clint Robinson.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Coco Crisp.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Cody Asche.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Colby Rasmus.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Conor Gillaspie.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Corey Dickerson.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Corey Seager.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Cristhian Adames.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Curt Casali.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Curtis Granderson.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/DJ LeMahieu.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Dae-ho Lee.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Daniel Descalso.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Daniel Murphy.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Danny Espinosa.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Danny Santana.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Danny Valencia.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Darwin Barney.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/David Dahl.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/David Freese.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/David Ortiz.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/David Ross.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Dee Gordon.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Delino DeShields.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Denard Span.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Derek Dietrich.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Derek Norris.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Desmond Jennings.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Devon Travis.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Dexter Fowler.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Didi Gregorius.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Dioner Navarro.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Domingo Santana.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Dustin Pedroia.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Eddie Rosario.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Eduardo Escobar.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Eduardo Nunez.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Edwin Encarnacion.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Elvis Andrus.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Ender Inciarte.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Enrique Hernandez.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Eric Hosmer.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Erick Aybar.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Eugenio Suarez.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Evan Gattis.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Evan Longoria.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Ezequiel Carrera.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Francisco Cervelli.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Francisco Lindor.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Franklin Gutierrez.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Freddie Freeman.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Freddy Galvis.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Gary Sanchez.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/George Springer.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Gerardo Parra.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Giancarlo Stanton.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Gordon Beckham.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Greg Garcia.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Gregor Blanco.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Gregorio Petit.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Gregory Polanco.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Hanley Ramirez.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Hernan Perez.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Howie Kendrick.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Hunter Pence.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Hyun Soo Kim.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Ian Desmond.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Ian Kinsler.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Ichiro Suzuki.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Ivan De Jesus.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/J.B. Shuck.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/J.D. Martinez.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/J.J. Hardy.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/J.T. Realmuto.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Jace Peterson.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Jackie Bradley.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Jacoby Ellsbury.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Jake Lamb.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Jake Marisnick.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Jake Smolinski.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/James Loney.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/James McCann.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Jarrod Dyson.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Jarrod Saltalamacchia.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Jason Castro.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Jason Heyward.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Jason Kipnis.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Javier Baez.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Jay Bruce.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Jayson Werth.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Jean Segura.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Jed Lowrie.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Jedd Gyorko.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Jeff Francoeur.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Jefry Marte.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Jeremy Hazelbaker.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Jett Bandy.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Jhonny Peralta.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Joc Pederson.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Joe Mauer.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Joe Panik.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Joey Rickard.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Joey Votto.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/John Jaso.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Johnny Giavotella.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Jon Jay.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Jonathan Lucroy.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Jonathan Schoop.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Jonathan Villar.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Jordy Mercer.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Jorge Polanco.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Jorge Soler.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Jose Abreu.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Jose Altuve.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Jose Bautista.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Jose Iglesias.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Jose Peraza.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Jose Ramirez.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Jose Reyes.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Josh Donaldson.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Josh Harrison.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Josh Reddick.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Juan Uribe.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Jung Ho Kang.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Jurickson Profar.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Justin Bour.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Justin Morneau.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Justin Smoak.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Justin Turner.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Justin Upton.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Kelly Johnson.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Kendrys Morales.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Keon Broxton.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Ketel Marte.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Kevin Kiermaier.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Kevin Pillar.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Khris Davis.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Kirk Nieuwenhuis.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Kole Calhoun.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Kolten Wong.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Kris Bryant.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Kurt Suzuki.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Kyle Seager.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Leonys Martin.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Logan Forsythe.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Logan Morrison.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Lonnie Chisenhall.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Lorenzo Cain.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Luis Valbuena.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Maikel Franco.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Mallex Smith.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Manny Machado.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Marcell Ozuna.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Marcus Semien.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Mark Reynolds.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Mark Teixeira.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Mark Trumbo.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Martin Maldonado.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Martin Prado.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Marwin Gonzalez.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Matt Adams.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Matt Carpenter.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Matt Duffy.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Matt Holliday.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Matt Kemp.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Matt Wieters.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Matthew Joyce.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Max Kepler.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Melky Cabrera.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Melvin Upton.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Michael Bourn.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Michael Conforto.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Michael Saunders.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Michael Taylor.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Miguel Cabrera.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Miguel Montero.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Miguel Rojas.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Miguel Sano.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Mike Napoli.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Mike Trout.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Mitch Moreland.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Mookie Betts.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Neil Walker.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Nelson Cruz.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Nick Ahmed.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Nick Castellanos.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Nick Hundley.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Nick Markakis.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Nolan Arenado.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Nolan Reimold.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Nomar Mazara.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Nori Aoki.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Odubel Herrera.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Orlando Arcia.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Oswaldo Arcia.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Paul Goldschmidt.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Paulo Orlando.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Pedro Alvarez.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Peter Bourjos.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Philip Gosselin.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Prince Fielder.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Rafael Ortega.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Rajai Davis.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Ramon Flores.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Randal Grichuk.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Rene Rivera.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Rickie Weeks.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Robbie Grossman.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Robinson Cano.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Rougned Odor.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Russell Martin.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Ryan Braun.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Ryan Howard.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Ryan Raburn.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Ryan Rua.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Ryan Schimpf.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Ryan Zimmerman.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Ryon Healy.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Salvador Perez.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Sandy Leon.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Scooter Gennett.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Scott Schebler.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Sean Rodriguez.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Seth Smith.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Shawn O'Malley.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Shin-Soo Choo.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Starlin Castro.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Starling Marte.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Stephen Piscotty.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Stephen Vogt.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Steve Pearce.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Steven Souza.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Tim Anderson.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Tim Beckham.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Todd Frazier.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Tommy Joseph.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Tony Wolters.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Travis Jankowski.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Travis Shaw.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Travis d'Arnaud.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Trayce Thompson.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Trea Turner.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Trevor Plouffe.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Trevor Story.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Troy Tulowitzki.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Tucker Barnhart.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Tyler Flowers.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Tyler Goeddel.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Tyler Holt.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Tyler Naquin.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Tyler Saladino.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Tyler White.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Victor Martinez.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Welington Castillo.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Whit Merrifield.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Wil Myers.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Willson Contreras.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Wilmer Flores.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Wilson Ramos.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Xander Bogaerts.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Yadier Molina.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Yan Gomes.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Yangervis Solarte.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Yasiel Puig.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Yasmani Grandal.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Yasmany Tomas.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Yoenis Cespedes.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Yonder Alonso.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Yunel Escobar.dframe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scraping/batting/batter_profiles/intermediate_dataframes/Zack Cozart.dframe" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scraping/modeling.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scraping/daily_game_scraper.py" afterPath="$PROJECT_DIR$/scraping/daily_game_scraper.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scraping/ghostdriver.log" afterPath="$PROJECT_DIR$/scraping/ghostdriver.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scraping/dataframe_creation.py" afterPath="$PROJECT_DIR$/scraping/dataframe_creation.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scraping/sandbox.py" afterPath="$PROJECT_DIR$/scraping/sandbox.py" />
     </list>
     <ignored path="smartsaber.iws" />
@@ -755,11 +53,9 @@
       <file leaf-file-name="dataframe_creation.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scraping/dataframe_creation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2172">
-              <caret line="210" column="16" selection-start-line="210" selection-start-column="9" selection-end-line="210" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="96">
+              <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -767,10 +63,20 @@
       <file leaf-file-name="daily_game_scraper.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scraping/daily_game_scraper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="276" column="0" selection-start-line="276" selection-start-column="0" selection-end-line="276" selection-end-column="0" />
+            <state relative-caret-position="-3120">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modeling.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scraping/modeling.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="11">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
-                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -780,7 +86,7 @@
         <entry file="file://$PROJECT_DIR$/scraping/sandbox.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="224">
-              <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+              <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -807,6 +113,7 @@
         <option value="$PROJECT_DIR$/scraping/baseball_reference_scraper.py" />
         <option value="$PROJECT_DIR$/scraping/dataframe_creation.py" />
         <option value="$PROJECT_DIR$/scraping/daily_game_scraper.py" />
+        <option value="$PROJECT_DIR$/scraping/modeling.py" />
         <option value="$PROJECT_DIR$/scraping/sandbox.py" />
       </list>
     </option>
@@ -861,86 +168,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="scraping" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smartsaber" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smartsaber" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scraping" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pitching" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pitcher_profiles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smartsaber" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smartsaber" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scraping" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pitching" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smartsaber" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smartsaber" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scraping" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="batting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smartsaber" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smartsaber" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scraping" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="batting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="batter_profiles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1172,15 +399,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23541667" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10625" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30675527" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30675527" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1234,9 +461,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6320">
           <caret line="404" column="0" selection-start-line="404" selection-start-column="0" selection-end-line="404" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1244,9 +469,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1680">
           <caret line="117" column="0" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1284,9 +507,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6320">
           <caret line="404" column="0" selection-start-line="404" selection-start-column="0" selection-end-line="404" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1294,9 +515,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1334,9 +553,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3792">
           <caret line="246" column="105" selection-start-line="246" selection-start-column="105" selection-end-line="246" selection-end-column="105" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1344,9 +561,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="912">
           <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1374,16 +589,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scraping/dataframe_creation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2172">
-          <caret line="210" column="16" selection-start-line="210" selection-start-column="9" selection-end-line="210" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scraping/fangraphs_scraper.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1404,12 +609,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scraping/dataframe_creation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scraping/daily_game_scraper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="276" column="0" selection-start-line="276" selection-start-column="0" selection-end-line="276" selection-end-column="0" />
+        <state relative-caret-position="-3120">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scraping/modeling.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1417,7 +638,7 @@
     <entry file="file://$PROJECT_DIR$/scraping/sandbox.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
-          <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
