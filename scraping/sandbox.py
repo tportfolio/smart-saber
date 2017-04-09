@@ -24,28 +24,30 @@ __author__ = 'Timothy'
 
 
 def main():
-
+    # mdl.create_clfs("pitcher")
 
     # dgs.biological_lineup_selection()
 
-    pdf = open("finalized_data_structures/pitcher_avg_splits_2016.dframe", "rb")
-    df = pickle.load(pdf)
-    pdf.close()
-    print(df)
+    # pdf = open("finalized_data_structures/pitcher_avg_splits_2016.dframe", "rb")
+    # df = pickle.load(pdf)
+    # pdf.close()
+    # print(df)
+    #
+    # bdf = open("finalized_data_structures/batter_avg_splits_2016.dframe", "rb")
+    # df2 = pickle.load(bdf)
+    # bdf.close()
+    # df2 = df2.dropna()
+    # print(df2)
 
-    bdf = open("finalized_data_structures/batter_avg_splits_2016.dframe", "rb")
-    df2 = pickle.load(bdf)
-    bdf.close()
-    df2 = df2.dropna()
-    print(df2)
-
-    pitchers, batters = dgs.get_lineups()
+    pitchers, batters = dgs.get_lineups(return_tuples=True)
     print("-----\nPitchers for today:")
     for p in pitchers:
-        print(p + " - " + str(p in list(df.index.values)))
+        # print(p + " - " + str(p in list(df.index.values)))
+        print(p)
     print("-----\nBatters for today:")
     for b in batters:
-        print(b + " - " + str(b in list(df2.index.values)))
+        # print(b + " - " + str(b in list(df2.index.values)))
+        print(b)
 
     # print(len(pitchers))
     # print(len(batters))

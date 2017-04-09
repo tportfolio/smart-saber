@@ -4,6 +4,7 @@ import pickle
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.externals import joblib
 
+
 def create_clfs(player_type):
     na = open("finalized_data_structures/" + player_type + "_game_logs_2016.data", "rb")
     df_dict = pickle.load(na)
@@ -18,6 +19,7 @@ def create_clfs(player_type):
 
         if player_type == "pitcher":
             df = df.drop("Points_Last5", 1)
+            df = df.drop("DR", 1)
 
         print(df.head())
         if player_type == "batter":
