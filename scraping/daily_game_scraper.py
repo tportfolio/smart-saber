@@ -1,5 +1,6 @@
 import collections
 import datetime
+import glob
 import os
 import pandas as pd
 import pickle
@@ -9,6 +10,7 @@ import time
 from io import StringIO
 from selenium import webdriver
 from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
+from sklearn.externals import joblib
 
 __author__ = 'Timothy'
 
@@ -229,9 +231,9 @@ def random_team_generator(batters, pitchers):
         if len(player_tuples) != len(set(player_tuples)):
             print(player_tuples)
             print("Duplicate player found, restarting...")
-        elif salary_sum > 50000:
+        elif salary_sum > 50000 or salary_sum < 49000:
             print(salary_sum)
-            print("Too much money allocated, restarting...")
+            print("Money allocation is invalid, restarting...")
         else:
             return player_tuples
 
@@ -299,32 +301,166 @@ Returns two properly formatted DataFrames of player information (DraftKings sala
 
 def get_predictions(rfr=False, headless=True, verbose=True):
 
-    if verbose:
-        print("Loading browser...")
+    os.chdir("daily_lineup_projections")
+    formatted_date = get_current_date()
 
-    browser = browser_initialization(headless)
+    if os.path.isdir(formatted_date):
+        if verbose:
+            print("Projections already downloaded, loading from pickled data.")
+        os.chdir(formatted_date)
 
-    if verbose:
-        print("Loading RotoGrinders batter projections...")
-    batter_df = get_rg_df(browser, "https://rotogrinders.com/projected-stats/mlb-hitter.csv?site=draftkings")
+        with open("batter_projections_" + formatted_date + ".data", "rb") as dli:
+            batter_df = pickle.load(dli)
 
-    if verbose:
-        print("Loading RotoGrinders pitcher projections...")
-    pitcher_df = get_rg_df(browser, "https://rotogrinders.com/projected-stats/mlb-pitcher.csv?site=draftkings")
+        with open("pitcher_projections_" + formatted_date + ".data", "rb") as dli:
+            pitcher_df = pickle.load(dli)
+
+    else:
+        if verbose:
+            print("Loading browser...")
+
+        browser = browser_initialization(headless)
+
+        if verbose:
+            print("Loading RotoGrinders batter projections...")
+        batter_df = get_rg_df(browser, "https://rotogrinders.com/projected-stats/mlb-hitter.csv?site=draftkings")
+
+        if verbose:
+            print("Loading RotoGrinders pitcher projections...")
+        pitcher_df = get_rg_df(browser, "https://rotogrinders.com/projected-stats/mlb-pitcher.csv?site=draftkings")
+
+        os.mkdir(formatted_date)
+        os.chdir(formatted_date)
+
+        with open("batter_projections_" + formatted_date + ".data", "wb") as dli:
+            pickle.dump(batter_df, dli)
+
+        with open("pitcher_projections_" + formatted_date + ".data", "wb") as dli:
+            pickle.dump(pitcher_df, dli)
+
+    os.chdir("../..")
 
     if rfr:
 
         # TODO: check if player has a model; if so, replace points with RFR projection; if not, then default to RG prediction
         pitcher_tuples, batter_tuples = get_lineups(return_tuples=True)
-        for b in list(batter_df.index.values):
-            prediction_input = []
 
-        for p in list(pitcher_df.index.values):
-            prediction_input = []
+        os.chdir("models/pitchers")
+        pitcher_models = glob.glob("*.mdl")
+        # for p in pitcher_models:
+        #     print(p)
+        os.chdir("../batters")
+        batter_models = glob.glob("*.mdl")
+        # for b in batter_models:
+        #     print(b)
+        os.chdir("../..")
 
+        active_batters = [str(el) for el in list(batter_df.index.values)]
+        active_pitchers = [str(el) for el in list(pitcher_df.index.values)]
 
+        pdf = open("finalized_data_structures/pitcher_avg_splits_2016.dframe", "rb")
+        pitcher_splits = pickle.load(pdf)
+        pdf.close()
+        print(pitcher_splits)
 
+        bdf = open("finalized_data_structures/batter_avg_splits_2016.dframe", "rb")
+        batter_splits = pickle.load(bdf)
+        bdf.close()
+        batter_splits = batter_splits.dropna()
+        print(batter_splits)
+
+        for batter in active_batters:
+            if batter + ".mdl" not in batter_models or batter not in list(batter_splits.index.values):  # skip, default to original value
+                continue
+
+            else:
+                current_tuple = ""
+                for bt in batter_tuples:
+                    if batter == bt[0]:  # name match
+                        current_tuple = bt
+                        break
+
+                if not current_tuple:  # no gameday info, skip
+                    continue
+
+                else:  # we found a tuple, extract information
+                    print(batter)
+                    print(current_tuple)
+                    opp_pitcher = current_tuple[3]
+
+                    if opp_pitcher in list(pitcher_splits.index.values):
+                        # BO | Away | Home | LHP | RHP | AVG_HA | AVG_LR | OBP_HA | OBP_LR | SLG_HA | SLG_LR | SOBB_HA | SOBB_LR
+                        bats_overall = batter_splits.ix[batter, "Bats:"]
+                        prediction_input = [current_tuple[1]]  # BO
+
+                        if current_tuple[2] == "Away":
+                            prediction_input.extend([1, 0])  # Away=1, Home=0
+                        else:
+                            prediction_input.extend([0, 1])  # Away=0, Home=1
+
+                        if pitcher_splits.ix[opp_pitcher, "Throws:"] == "Left":
+                            prediction_input.extend([1, 0])  # LHP=1, RHP=0
+                            if bats_overall == "Both":
+                                bats_overall = "Right"
+                        else:
+                            prediction_input.extend([0, 1])  # LHP=0, RHP=1
+                            if bats_overall == "Both":
+                                bats_overall = "Left"
+
+                        headers = ["AVG", "OBP%", "SLG%", "SO/BB"]
+
+                        for j in range(len(headers)):
+                            if prediction_input[1]:  # away game for batter, get home info for pitcher
+                                prediction_input.append(pitcher_splits.ix[opp_pitcher, headers[j] + " - Home"])
+                            else:  # home game for batter, get away info for pitcher
+                                prediction_input.append(pitcher_splits.ix[opp_pitcher, headers[j] + " - Away"])
+                            if bats_overall == "Left":
+                                prediction_input.append(pitcher_splits.ix[opp_pitcher, headers[j] + " - LHB"])
+                            else:
+                                prediction_input.append(pitcher_splits.ix[opp_pitcher, headers[j] + " - RHB"])
+
+                        print(prediction_input)
+                        random_forest = joblib.load("models/batters/" + batter + ".mdl")
+                        predicted_points = random_forest.predict(prediction_input)
+                        batter_df.ix[batter, "Points"] = predicted_points
+                        print(predicted_points)
+
+        for pitcher in active_pitchers:
+            print(pitcher)
+            if pitcher + ".mdl" not in pitcher_models:  # skip, default to original value
+                continue
+            else:
+                current_tuple = ""
+                for pt in pitcher_tuples:
+                    if pitcher == pt[0]:  # name match
+                        current_tuple = pt
+                        break
+                if not current_tuple:  # no gameday info, skip
+                    continue
+                else:  # we found a tuple, extract information
+                    print(current_tuple)
+
+                    # Away | Home | AVG_HA | AVG_LR | BB_K_HA | BB_K_LR | GB_FB_HA | GB_FB_LR | OPS_HA | OPS_LR
+                    prediction_input = []
+
+    os.chdir("..")
     return batter_df, pitcher_df
+
+
+"""get_current_date():
+
+Formats current date in appropriate order.
+
+Returns string with the formatted date.
+
+"""
+
+
+def get_current_date():
+    current_date = str(datetime.datetime.now()).split(' ')[0]
+    current_year, current_month, current_day = current_date.split('-')
+    formatted_date = str(current_month + current_day + current_year)
+    return formatted_date
 
 
 """get_lineups(return_tuples=False, headless=True, verbose=True):
@@ -342,11 +478,9 @@ Returns list of players who are active for the day. Pickles detailed tuples and 
 
 
 def get_lineups(return_tuples=False, headless=True, verbose=True):
-
+    print(os.getcwd())
     os.chdir("daily_lineup_info")
-    current_date = str(datetime.datetime.now()).split(' ')[0]
-    current_year, current_month, current_day = current_date.split('-')
-    formatted_date = str(current_month + current_day + current_year)
+    formatted_date = get_current_date()
 
     all_batters = []
     all_pitchers = []
@@ -379,7 +513,7 @@ def get_lineups(return_tuples=False, headless=True, verbose=True):
         browser = browser_initialization(headless)
 
         if verbose:
-            print("Connecting to FantasyLabs for line-ups on " + current_date + "...")
+            print("Connecting to FantasyLabs for line-ups on " + formatted_date + "...")
 
         fl_link = "http://www.fantasylabs.com/mlb/lineups/?date=" + formatted_date
         browser.get(fl_link)

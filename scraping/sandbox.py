@@ -37,22 +37,23 @@ def main():
     # df2 = df2.dropna()
     # print(df2)
 
-    pitchers, batters = dgs.get_lineups(return_tuples=True)
-    print("-----\nPitchers for today:")
-    for p in pitchers:
-        # print(p + " - " + str(p in list(df.index.values)))
-        print(p)
-    print("-----\nBatters for today:")
-    for b in batters:
-        # print(b + " - " + str(b in list(df2.index.values)))
-        print(b)
+    # pitchers, batters = dgs.get_lineups(return_tuples=True)
+    # print("-----\nPitchers for today:")
+    # for p in pitchers:
+    #     # print(p + " - " + str(p in list(df.index.values)))
+    #     print(p)
+    # print("-----\nBatters for today:")
+    # for b in batters:
+    #     # print(b + " - " + str(b in list(df2.index.values)))
+    #     print(b)
 
-    # batters, pitchers = dgs.get_predictions(rfr=True)
-    # print(batters)
-    # print(pitchers)
-
-    # print(len(pitchers))
-    # print(len(batters))
+    batters, pitchers = dgs.get_predictions(rfr=True)
+    print(batters)
+    print(pitchers)
+    # os.chdir("models/pitchers")
+    # pitcher_models = glob.glob("*.mdl")
+    # for p in pitcher_models:
+    #     print(p)
 
     # lineup = dgs.random_team_generator(batter_dfs, pitcher_df)
     # print(lineup)
