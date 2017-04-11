@@ -47,9 +47,7 @@ def main():
     #     # print(b + " - " + str(b in list(df2.index.values)))
     #     print(b)
 
-    batters, pitchers = dgs.get_predictions(rfr=True)
-    print(batters)
-    print(pitchers)
+    print(dgs.biological_lineup_selection(rfr=True))
     # os.chdir("models/pitchers")
     # pitcher_models = glob.glob("*.mdl")
     # for p in pitcher_models:

@@ -231,7 +231,7 @@ def random_team_generator(batters, pitchers):
         if len(player_tuples) != len(set(player_tuples)):
             print(player_tuples)
             print("Duplicate player found, restarting...")
-        elif salary_sum > 50000 or salary_sum < 49000:
+        elif salary_sum > 50000:
             print(salary_sum)
             print("Money allocation is invalid, restarting...")
         else:
@@ -301,9 +301,13 @@ Returns two properly formatted DataFrames of player information (DraftKings sala
 
 def get_predictions(rfr=False, headless=True, verbose=True):
 
-    os.chdir("daily_lineup_projections")
+    if rfr:
+        os.chdir("daily_rfr_projections")
+    else:
+        os.chdir("daily_rg_projections")
     formatted_date = get_current_date()
 
+    # we already have the desired projections
     if os.path.isdir(formatted_date):
         if verbose:
             print("Projections already downloaded, loading from pickled data.")
@@ -315,34 +319,36 @@ def get_predictions(rfr=False, headless=True, verbose=True):
         with open("pitcher_projections_" + formatted_date + ".data", "rb") as dli:
             pitcher_df = pickle.load(dli)
 
-    else:
-        if verbose:
-            print("Loading browser...")
+        os.chdir("../..")  # leave date, then projection folder
 
-        browser = browser_initialization(headless)
+        return batter_df, pitcher_df
 
-        if verbose:
-            print("Loading RotoGrinders batter projections...")
-        batter_df = get_rg_df(browser, "https://rotogrinders.com/projected-stats/mlb-hitter.csv?site=draftkings")
+    # we need to fetch information from RotoGrinders
+    if verbose:
+        print("Loading browser...")
 
-        if verbose:
-            print("Loading RotoGrinders pitcher projections...")
-        pitcher_df = get_rg_df(browser, "https://rotogrinders.com/projected-stats/mlb-pitcher.csv?site=draftkings")
+    browser = browser_initialization(headless)
 
-        os.mkdir(formatted_date)
-        os.chdir(formatted_date)
+    if verbose:
+        print("Loading RotoGrinders batter projections...")
+    batter_df = get_rg_df(browser, "https://rotogrinders.com/projected-stats/mlb-hitter.csv?site=draftkings")
 
-        with open("batter_projections_" + formatted_date + ".data", "wb") as dli:
-            pickle.dump(batter_df, dli)
+    if verbose:
+        print("Loading RotoGrinders pitcher projections...")
+    pitcher_df = get_rg_df(browser, "https://rotogrinders.com/projected-stats/mlb-pitcher.csv?site=draftkings")
 
-        with open("pitcher_projections_" + formatted_date + ".data", "wb") as dli:
-            pickle.dump(pitcher_df, dli)
+    os.mkdir(formatted_date)
+    os.chdir(formatted_date)
+
+    with open("batter_projections_" + formatted_date + ".data", "wb") as dli:
+        pickle.dump(batter_df, dli)
+
+    with open("pitcher_projections_" + formatted_date + ".data", "wb") as dli:
+        pickle.dump(pitcher_df, dli)
 
     os.chdir("../..")
 
     if rfr:
-
-        # TODO: check if player has a model; if so, replace points with RFR projection; if not, then default to RG prediction
         pitcher_tuples, batter_tuples = get_lineups(return_tuples=True)
 
         os.chdir("models/pitchers")
@@ -385,7 +391,7 @@ def get_predictions(rfr=False, headless=True, verbose=True):
 
                 else:  # we found a tuple, extract information
                     print(batter)
-                    print(current_tuple)
+                    print(current_tuple)  # sample tuple: ('Dexter Fowler', 1, 'Away', 'Tanner Roark')
                     opp_pitcher = current_tuple[3]
 
                     if opp_pitcher in list(pitcher_splits.index.values):
@@ -427,7 +433,7 @@ def get_predictions(rfr=False, headless=True, verbose=True):
 
         for pitcher in active_pitchers:
             print(pitcher)
-            if pitcher + ".mdl" not in pitcher_models:  # skip, default to original value
+            if pitcher + ".mdl" not in pitcher_models or pitcher not in list(pitcher_splits.index.values):  # skip, default to original value
                 continue
             else:
                 current_tuple = ""
@@ -439,11 +445,58 @@ def get_predictions(rfr=False, headless=True, verbose=True):
                     continue
                 else:  # we found a tuple, extract information
                     print(current_tuple)
+                    # sample tuple: ('Chris Sale', 'Away', ['Ian Kinsler', 'Nick Castellanos',
+                    # 'Miguel Cabrera', 'Victor Martinez', 'Justin Upton', 'Mikie Mahtook',
+                    # 'James McCann', 'JaCoby Jones', 'Jose Iglesias'])
 
+                    headers = ["AVG", "BB/K", "GB/FB", "OPS"]
                     # Away | Home | AVG_HA | AVG_LR | BB_K_HA | BB_K_LR | GB_FB_HA | GB_FB_LR | OPS_HA | OPS_LR
                     prediction_input = []
+                    throws = pitcher_splits.ix[pitcher, "Throws:"]
 
-    os.chdir("..")
+                    if current_tuple[1] == "Away":
+                        prediction_input.extend([1, 0])  # Away=1, Home=0
+                    else:
+                        prediction_input.extend([0, 1])  # Away=0, Home=1
+
+                    offset = len(prediction_input)
+
+                    prediction_input.extend([0] * 8)  # placeholder for the remaining positions
+
+                    batter_count = 0
+                    for batter in current_tuple[2]:
+                        if batter in list(batter_splits.index.values):
+                            batter_count += 1
+                            print(batter)
+
+                            for j in range(len(headers)):
+                                if prediction_input[0]:  # away game for pitcher, get home info for batters
+                                    prediction_input[offset+2*j] += batter_splits.ix[batter, headers[j] + " - Home"]
+                                else:
+                                    prediction_input[offset+2*j] += batter_splits.ix[batter, headers[j] + " - Away"]
+
+                                if throws == "Left":
+                                    prediction_input[offset+2*j+1] += batter_splits.ix[batter, headers[j] + " - LHP"]
+                                else:
+                                    prediction_input[offset+2*j+1] += batter_splits.ix[batter, headers[j] + " - RHP"]
+
+                    for i in range(offset, len(prediction_input)):
+                        prediction_input[i] /= batter_count
+
+                    print(prediction_input)
+                    random_forest = joblib.load("models/pitchers/" + pitcher + ".mdl")
+                    predicted_points = random_forest.predict(prediction_input)
+                    pitcher_df.ix[pitcher, "Points"] = predicted_points
+                    print(predicted_points)
+
+        os.chdir("daily_rfr_projections/" + formatted_date)
+        with open("batter_projections_" + formatted_date + ".data", "wb") as dli:
+            pickle.dump(batter_df, dli)
+
+        with open("pitcher_projections_" + formatted_date + ".data", "wb") as dli:
+            pickle.dump(pitcher_df, dli)
+        os.chdir("../..")
+
     return batter_df, pitcher_df
 
 
